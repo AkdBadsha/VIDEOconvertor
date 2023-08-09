@@ -9,7 +9,7 @@ CHANNEL_LINK = "https://t.me/AKD_DUBBERS"
 
 SUPPORT_LINK = "https://t.me/+vU1eN4sTQlkyOGM9"
 
-info_text = "This bot is developed by @kingBadsha3232\n\nWritten in python library TELETHON.\n\nBot by : @Badsha_Studios\nSupport : @kingBadsha3232\n\nV1.4"   
+info_text = "This bot is Created by @kingBadsha3232\n\nWritten in python library TELETHON.\n\nBot by : @Badsha_Studios\nSupport : @kingBadsha3232\n\nV1.4"   
 
 help_text = """**v1.4**
 
