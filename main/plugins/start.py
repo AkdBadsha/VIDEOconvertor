@@ -53,7 +53,7 @@ async def source(event):
 async def help(event):
     await event.edit('**👥HELP & SETTINGS.**',
                     buttons=[[
-                         Button.inline("Sᴇᴛ Tʜᴜᴍʙ ", data=a="sett"),
+                         Button.inline("Sᴇᴛ Tʜᴜᴍʙ ", data="sett"),
                          Button.inline("Rᴇᴍ Tʜᴜᴍʙ ", data='remt')],
                          [
                          Button.inline("Pʟᴜɢɪɴs", data="plugins"),
