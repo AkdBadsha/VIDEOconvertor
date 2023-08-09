@@ -25,7 +25,7 @@ from ethon.mystarts import vc_menu
 async def start(event):
     await event.reply(f'{st}', 
                       buttons=[
-                              [Button.inline("Mᴇɴᴜ.", data="menu")]
+                              [Button.inline("Mᴇɴᴜ.", data="help")]
                               ])
     
 @Drone.on(events.callbackquery.CallbackQuery(data="menu"))
@@ -36,7 +36,7 @@ async def menu(event):
 async def info(event):
     await event.edit(f'**ℹ️NFO:**\n\n{info_text}',
                     buttons=[[
-                         Button.inline("Mᴇɴᴜ.", data="menu")]])
+                         Button.inline("Mᴇɴᴜ.", data="help")]])
     
 @Drone.on(events.callbackquery.CallbackQuery(data="notice"))
 async def notice(event):
@@ -59,7 +59,7 @@ async def help(event):
                          Button.inline("Pʟᴜɢɪɴs", data="plugins"),
                          Button.url("Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/kingBadsha3232")],
                          [
-                         Button.inline("Bᴀᴄᴋ", data="menu")]])
+                         Button.inline("Bᴀᴄᴋ", data="help")]])
     
 @Drone.on(events.callbackquery.CallbackQuery(data="plugins"))
 async def plugins(event):
@@ -98,4 +98,5 @@ async def remt(event):
         await event.edit('Removed!')
     except Exception:
         await event.edit("No thumbnail saved.")
+    
     
