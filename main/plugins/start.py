@@ -47,7 +47,7 @@ async def source(event):
     await event.edit(source_text,
                     buttons=[[
                          Button.url("Gʀᴏᴜᴘ", url="https://t.me/+vU1eN4sTQlkyOGM9"),
-                         Button.url("Cʜᴀɴɴᴇʟ", url=l="https://t.me/AKD_DUBBERS")]])
+                         Button.url("Cʜᴀɴɴᴇʟ", url="https://t.me/AKD_DUBBERS")]])
                     
 @Drone.on(events.callbackquery.CallbackQuery(data="help"))
 async def help(event):
