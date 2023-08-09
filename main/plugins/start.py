@@ -25,7 +25,7 @@ from ethon.mystarts import vc_menu
 async def start(event):
     await event.reply(f'{st}', 
                       buttons=[
-                              [Button.inline("Menu.", data="menu")]
+                              [Button.inline("Mᴇɴᴜ.", data="menu")]
                               ])
     
 @Drone.on(events.callbackquery.CallbackQuery(data="menu"))
@@ -36,7 +36,7 @@ async def menu(event):
 async def info(event):
     await event.edit(f'**ℹ️NFO:**\n\n{info_text}',
                     buttons=[[
-                         Button.inline("Menu.", data="menu")]])
+                         Button.inline("Mᴇɴᴜ.", data="menu")]])
     
 @Drone.on(events.callbackquery.CallbackQuery(data="notice"))
 async def notice(event):
@@ -46,26 +46,26 @@ async def notice(event):
 async def source(event):
     await event.edit(source_text,
                     buttons=[[
-                         Button.url("FOR PERSONAL USE", url="https://github.com/vasusen-code/videoconvertor/tree/main"),
-                         Button.url("FOR YOUR CHANNEL ", url="https://github.com/vasusen-code/videoconvertor/")]])
+                         Button.url("Gʀᴏᴜᴘ", url="https://t.me/+vU1eN4sTQlkyOGM9"),
+                         Button.url("Cʜᴀɴɴᴇʟ", url=l="https://t.me/AKD_DUBBERS")]])
                     
 @Drone.on(events.callbackquery.CallbackQuery(data="help"))
 async def help(event):
     await event.edit('**👥HELP & SETTINGS.**',
                     buttons=[[
-                         Button.inline("SET THUMB", data="sett"),
-                         Button.inline("REM THUMB", data='remt')],
+                         Button.inline("Sᴇᴛ Tʜᴜᴍʙ ", data=a="sett"),
+                         Button.inline("Rᴇᴍ Tʜᴜᴍʙ ", data='remt')],
                          [
-                         Button.inline("PLUGINS", data="plugins"),
-                         Button.url("SUPPORT", url=f"{SUPPORT_LINK}")],
+                         Button.inline("Pʟᴜɢɪɴs", data="plugins"),
+                         Button.url("Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/kingBadsha3232")],
                          [
-                         Button.inline("BACK", data="menu")]])
+                         Button.inline("Bᴀᴄᴋ", data="menu")]])
     
 @Drone.on(events.callbackquery.CallbackQuery(data="plugins"))
 async def plugins(event):
     await event.edit(f'{help_text}',
                     buttons=[[
-                         Button.inline("Menu.", data="help")]])
+                         Button.inline("Mᴇɴᴜ.", data="help")]])
     
 @Drone.on(events.callbackquery.CallbackQuery(data="sett"))
 async def sett(event):    
