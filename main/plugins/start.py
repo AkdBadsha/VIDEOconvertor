@@ -59,7 +59,7 @@ async def help(event):
                          Button.inline("Pʟᴜɢɪɴs", data="plugins"),
                          Button.url("Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/kingBadsha3232")],
                          [
-                         Button.inline("Bᴀᴄᴋ", data="help")]])
+                         Button.inline("Cᴏᴍᴍᴜɴɪᴛʏ", data="source")]])
     
 @Drone.on(events.callbackquery.CallbackQuery(data="plugins"))
 async def plugins(event):
